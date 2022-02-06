@@ -4,6 +4,9 @@ adopt-info: warble
 grade: stable
 confinement: strict
 compression: lzo
+architectures:
+  - build-on: amd64
+  - build-on: arm64
 
 layout:
   /usr/share/com.github.avojak.warble:
