@@ -1,0 +1,20 @@
+diff --git a/lib/Widgets/Settings.vala b/lib/Widgets/Settings.vala
+index 464d2a4d..4de74c8d 100644
+--- a/lib/Widgets/Settings.vala
++++ b/lib/Widgets/Settings.vala
+@@ -115,6 +115,7 @@ namespace Granite {
+                 debug ("cannot use the portal, using the AccountsService: %s", e.message);
+             }
+ 
++            /*
+             try {
+                 pantheon_act = GLib.Bus.get_proxy_sync (
+                     GLib.BusType.SYSTEM,
+@@ -135,6 +136,7 @@ namespace Granite {
+             } catch (Error e) {
+                 critical (e.message);
+             }
++            */
+ 
+             // Set a default in case we can't get from system
+             prefers_color_scheme = ColorScheme.NO_PREFERENCE;

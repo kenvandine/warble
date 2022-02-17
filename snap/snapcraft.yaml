@@ -25,6 +25,9 @@ parts:
     source-tag: 6.2.0
     meson-parameters: [ --prefix=/usr ]
     plugin: meson
+    override-pull: |
+      snapcraftctl pull
+      patch -p1 < $SNAPCRAFT_PROJECT_DIR/snap/local/patches/as.patch
 
   warble:
     after: [ granite ]
